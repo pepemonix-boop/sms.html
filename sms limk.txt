@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ارسال پیامک</title>
+<script>
+  window.onload = function() {
+    // شماره و متن پیامک
+    const phone = "+989167000095";
+    const message = "2";
+    // ساخت لینک sms
+    const smsLink = `sms:${phone}?body=${encodeURIComponent(message)}`;
+    // تغییر مسیر به لینک sms
+    window.location.href = smsLink;
+  }
+</script>
+</head>
+<body>
+<p>در حال انتقال به برنامه پیامک...</p>
+</body>
+</html>
